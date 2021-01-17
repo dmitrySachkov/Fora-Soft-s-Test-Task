@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12024AC925B46C4C000087A1 /* HistoryPresentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12024AC825B46C4C000087A1 /* HistoryPresentVC.swift */; };
 		12308D8525A729D400AF3984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12308D8425A729D400AF3984 /* AppDelegate.swift */; };
 		12308D8725A729D400AF3984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12308D8625A729D400AF3984 /* SceneDelegate.swift */; };
 		12308D8C25A729D400AF3984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12308D8A25A729D400AF3984 /* Main.storyboard */; };
@@ -18,9 +19,14 @@
 		12308DAA25A72BE500AF3984 /* TracksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12308DA925A72BE500AF3984 /* TracksVC.swift */; };
 		12308DAD25A7307A00AF3984 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12308DAC25A7307A00AF3984 /* ApiService.swift */; };
 		12308DB025A7315400AF3984 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12308DAF25A7315400AF3984 /* DataModel.swift */; };
+		123D337C25ACDA2700084A9A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 123D337B25ACDA2700084A9A /* Realm */; };
+		123D337E25ACDA2700084A9A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 123D337D25ACDA2700084A9A /* RealmSwift */; };
+		123D338625AD0EC000084A9A /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D338425AD0EC000084A9A /* AlbumsCell.swift */; };
+		123D338725AD0EC000084A9A /* AlbumsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123D338525AD0EC000084A9A /* AlbumsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12024AC825B46C4C000087A1 /* HistoryPresentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresentVC.swift; sourceTree = "<group>"; };
 		12308D8125A729D400AF3984 /* Fora Soft’s Test Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fora Soft’s Test Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12308D8425A729D400AF3984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12308D8625A729D400AF3984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +40,8 @@
 		12308DA925A72BE500AF3984 /* TracksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksVC.swift; sourceTree = "<group>"; };
 		12308DAC25A7307A00AF3984 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		12308DAF25A7315400AF3984 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		123D338425AD0EC000084A9A /* AlbumsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
+		123D338525AD0EC000084A9A /* AlbumsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123D337E25ACDA2700084A9A /* RealmSwift in Frameworks */,
+				123D337C25ACDA2700084A9A /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 				12308DA325A72B8500AF3984 /* MainVC.swift */,
 				12308DA625A72BA000AF3984 /* HistoryVC.swift */,
 				12308DA925A72BE500AF3984 /* TracksVC.swift */,
+				12024AC825B46C4C000087A1 /* HistoryPresentVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -94,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				12308D8A25A729D400AF3984 /* Main.storyboard */,
+				123D338425AD0EC000084A9A /* AlbumsCell.swift */,
+				123D338525AD0EC000084A9A /* AlbumsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +143,10 @@
 			dependencies = (
 			);
 			name = "Fora Soft’s Test Task";
+			packageProductDependencies = (
+				123D337B25ACDA2700084A9A /* Realm */,
+				123D337D25ACDA2700084A9A /* RealmSwift */,
+			);
 			productName = "Fora Soft’s Test Task";
 			productReference = 12308D8125A729D400AF3984 /* Fora Soft’s Test Task.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 12308D7825A729D400AF3984;
+			packageReferences = (
+				123D337A25ACDA2700084A9A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 12308D8225A729D400AF3984 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -174,6 +194,7 @@
 				12308D9425A729D600AF3984 /* LaunchScreen.storyboard in Resources */,
 				12308D9125A729D600AF3984 /* Assets.xcassets in Resources */,
 				12308D8C25A729D400AF3984 /* Main.storyboard in Resources */,
+				123D338725AD0EC000084A9A /* AlbumsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,10 +206,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				12308D8F25A729D400AF3984 /* Fora_Soft_s_Test_Task.xcdatamodeld in Sources */,
+				12024AC925B46C4C000087A1 /* HistoryPresentVC.swift in Sources */,
 				12308DA725A72BA000AF3984 /* HistoryVC.swift in Sources */,
 				12308DA425A72B8500AF3984 /* MainVC.swift in Sources */,
 				12308D8525A729D400AF3984 /* AppDelegate.swift in Sources */,
 				12308DAA25A72BE500AF3984 /* TracksVC.swift in Sources */,
+				123D338625AD0EC000084A9A /* AlbumsCell.swift in Sources */,
 				12308DB025A7315400AF3984 /* DataModel.swift in Sources */,
 				12308DAD25A7307A00AF3984 /* ApiService.swift in Sources */,
 				12308D8725A729D400AF3984 /* SceneDelegate.swift in Sources */,
@@ -393,6 +416,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		123D337A25ACDA2700084A9A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		123D337B25ACDA2700084A9A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 123D337A25ACDA2700084A9A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		123D337D25ACDA2700084A9A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 123D337A25ACDA2700084A9A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		12308D8D25A729D400AF3984 /* Fora_Soft_s_Test_Task.xcdatamodeld */ = {

@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Fora Soft’s Test Task
 //
-//  Created by Dmitry Sachkov on 07.01.2021.
+//  Created by Dmitry Sachkov on 13.01.2021.
 //
 
 import UIKit
